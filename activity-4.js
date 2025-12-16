@@ -9,6 +9,7 @@ function isAdult(age) {
     return false;
 }
 // Convert to arrow function:
+const isAdult2 = (age) => (age >= 18 ? true : false);
 
 
 // Problem 2
@@ -24,6 +25,10 @@ function getGrade(score) {
     }
 }
 // Convert to arrow function:
+const getGrade2 = (score) =>
+    score >= 90 ? "A" :
+    score >= 80 ? "B" :
+    score >= 70 ? "C" : "F";
 
 
 // Problem 3
@@ -35,6 +40,13 @@ function calculateTotal(items) {
     return total;
 }
 // Convert to arrow function:
+const calculateTotal2 = (items) => {
+    let total = 0;
+    for (let i = 0; i < items.length; i++) {
+        total += items[i];
+    }
+    return total;
+};
 
 
 // Problem 4
@@ -44,6 +56,8 @@ function filterEvenNumbers(numbers) {
     });
 }
 // Convert to arrow function (convert both outer and inner functions):
+const filterEvenNumbers2 = (numbers) =>
+    numbers.filter((num) => num % 2 === 0);
 
 
 // Problem 5
@@ -53,6 +67,8 @@ function mapToSquares(arr) {
     });
 }
 // Convert to arrow function (convert both outer and inner functions):
+const mapToSquares2 = (arr) =>
+    arr.map((x) => x * x);
 
 
 // Problem 6
@@ -66,6 +82,15 @@ function findLongestWord(words) {
     return longest;
 }
 // Convert to arrow function (convert both outer and inner functions):
+const findLongestWord2 = (words) => {
+    let longest = "";
+    words.forEach((word) => {
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    });
+    return longest;
+};
 
 
 // Problem 7
@@ -75,6 +100,8 @@ function sumArray(numbers) {
     }, 0);
 }
 // Convert to arrow function (convert both outer and inner functions):
+const sumArray2 = (numbers) =>
+    numbers.reduce((acc, num) => acc + num, 0);
 
 
 // Problem 8
@@ -82,6 +109,8 @@ function getInitials(firstName, lastName) {
     return firstName.charAt(0).toUpperCase() + lastName.charAt(0).toUpperCase();
 }
 // Convert to arrow function:
+const getInitials2 = (firstName, lastName) =>
+    firstName.charAt(0).toUpperCase() + lastName.charAt(0).toUpperCase();
 
 
 // Problem 9
@@ -92,6 +121,8 @@ function checkPassword(password) {
     return false;
 }
 // Convert to arrow function:
+const checkPassword2 = (password) =>
+    password.length >= 8 ? true : false;
 
 
 // Problem 10
@@ -102,4 +133,5 @@ function formatName(first, middle, last) {
     return first + " " + last;
 }
 // Convert to arrow function:
-
+const formatName2 = (first, middle, last) =>
+    middle ? first + " " + middle + " " + last : first + " " + last;

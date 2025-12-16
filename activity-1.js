@@ -7,6 +7,8 @@ function greet() {
 }
 // Convert to arrow function:
 
+const greet2 = () => "Hello, World!";
+
 
 // Problem 2
 function sayGoodbye() {
@@ -14,20 +16,23 @@ function sayGoodbye() {
 }
 // Convert to arrow function:
 
+const sayGoodbye2 = () => console.log("Goodbye!");
+
 
 // Problem 3
 function getCurrentYear() {
     return new Date().getFullYear();
 }
 // Convert to arrow function:
-const getCurrentYear = () => new Date().getFullYear();
+const getCurrentYear2 = () => new Date().getFullYear();
+
 
 // Problem 4
 function printMessage() {
     console.log("Welcome to JavaScript!");
 }
 // Convert to arrow function:
-const printMessage = () => "Welcome to JavaScript!";
+const printMessage2 = () => console.log("Welcome to JavaScript!");
 
 
 // Problem 5
@@ -36,12 +41,16 @@ function getPi() {
 }
 // Convert to arrow function:
 
+const getPi2 = () => 3.14159;
+
 
 // Problem 6
 function showAlert() {
     alert("This is an alert!");
 }
 // Convert to arrow function:
+
+const showAlert2 = () => alert("This is an alert!");
 
 
 // Problem 7
@@ -50,12 +59,16 @@ function getRandomNumber() {
 }
 // Convert to arrow function:
 
+const getRandomNumber2 = () => Math.random();
+
 
 // Problem 8
 function displayDate() {
     console.log(new Date());
 }
 // Convert to arrow function:
+
+const displayDate2 = () => console.log(new Date());
 
 
 // Problem 9
@@ -64,6 +77,8 @@ function getTrue() {
 }
 // Convert to arrow function:
 
+const getTrue2 = () => true;
+
 
 // Problem 10
 function logInfo() {
@@ -71,3 +86,4 @@ function logInfo() {
 }
 // Convert to arrow function:
 
+const logInfo2= () => console.log("Information logged");
